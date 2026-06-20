@@ -1,0 +1,43 @@
+{
+  "testMsg": {
+    "type": "button",
+    "label": "Envoyer un message test",
+    "value": "sendTestMsg",
+    "group": "🧪 Test"
+  },
+  "testClear": {
+    "type": "button",
+    "label": "Effacer tous les messages",
+    "value": "clearAllMsgs",
+    "group": "🧪 Test"
+  },
+
+  "mentionAliases": {
+    "type": "text",
+    "label": "Pseudos à surveiller (séparés par virgule)",
+    "value": "DoktorP3st, Paglorieux",
+    "group": "✨ Effets spéciaux"
+  },
+
+  "cardColor":   { "type": "colorpicker", "label": "Couleur fond carte",     "value": "#06040f", "group": "🎨 Couleurs" },
+  "cardOpacity": { "type": "slider",      "label": "Opacité carte (0–100)",  "value": 92, "min": 0,  "max": 100, "step": 1, "group": "🎨 Couleurs" },
+  "textColor":   { "type": "colorpicker", "label": "Couleur texte messages", "value": "#c0bcd8", "group": "🎨 Couleurs" },
+
+  "fontName":         { "type": "googleFont", "label": "Police messages",     "value": "Inter", "group": "🔤 Typographie" },
+  "fontSize":         { "type": "slider",     "label": "Taille texte (px)",   "value": 14, "min": 10, "max": 30, "step": 1, "group": "🔤 Typographie" },
+  "usernameFontSize": { "type": "slider",     "label": "Taille pseudo (px)",  "value": 12, "min": 8,  "max": 24, "step": 1, "group": "🔤 Typographie" },
+
+  "chatWidth":    { "type": "slider",   "label": "Largeur widget (px)",            "value": 400, "min": 260, "max": 800, "step": 10, "group": "📐 Mise en page" },
+  "maxMessages":  { "type": "number",   "label": "Max messages affichés",          "value": 8,   "min": 3,   "max": 20,  "step": 1,  "group": "📐 Mise en page" },
+  "msgSpacing":   { "type": "slider",   "label": "Espacement messages (px)",       "value": 7,   "min": 0,   "max": 30,  "step": 1,  "group": "📐 Mise en page" },
+  "radius":       { "type": "slider",   "label": "Arrondi cartes (px)",            "value": 4,   "min": 0,   "max": 16,  "step": 1,  "group": "📐 Mise en page" },
+  "showTimestamp":{ "type": "checkbox", "label": "Afficher l'heure",               "value": false, "group": "📐 Mise en page" },
+  "showBadges":   { "type": "checkbox", "label": "Afficher les badges",            "value": true,  "group": "📐 Mise en page" },
+
+  "animIn":    { "type": "slider",   "label": "Durée animation entrée (ms)",     "value": 380, "min": 100, "max": 1000, "step": 50, "group": "🎬 Animations" },
+  "lifetime":  { "type": "slider",   "label": "Durée de vie message (sec, 0=∞)", "value": 25,  "min": 0,   "max": 120,  "step": 5,  "group": "🎬 Animations" },
+
+  "hideCommands": { "type": "checkbox", "label": "Masquer commandes (!)",  "value": false, "group": "⚙️ Filtres" },
+  "hideBots":     { "type": "checkbox", "label": "Masquer bots connus",    "value": true,  "group": "⚙️ Filtres" },
+  "minLen":       { "type": "number",   "label": "Longueur min message",   "value": 1, "min": 1, "max": 20, "step": 1, "group": "⚙️ Filtres" }
+}
