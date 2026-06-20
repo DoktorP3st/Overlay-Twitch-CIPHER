@@ -57,6 +57,9 @@ function applyTheme() {
   var bgOp = (parseInt(fd('cardOpacity')) || 92) / 100;
   R.style.setProperty('--card-bg', 'rgba(' + hexToRgb(fd('cardColor') || '#06040f') + ',' + bgOp + ')');
 
+  var side = fd('chatSide') || 'left';
+  document.body.classList.toggle('chat-right', side === 'right');
+
   var font = fd('fontName') || 'Inter';
   var link = document.getElementById('dyn-font');
   if (!link) {
@@ -215,11 +218,11 @@ window.addEventListener('onFieldChange', function(obj) {
   var value     = obj.detail.value;
 
   // Vérifie par clé OU par valeur (compatibilité SE)
-  if (fieldName === 'testMsg' || value === 'Tester') {
+  if (fieldName === 'testMsg' || value === 'sendTestMsg') {
     sendTestMsg();
     return;
   }
-  if (fieldName === 'testClear' || value === 'Effacer') {
+  if (fieldName === 'testClear' || value === 'clearAllMsgs') {
     clearAllMsgs();
     return;
   }

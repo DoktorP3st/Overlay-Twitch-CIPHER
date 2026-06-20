@@ -27,6 +27,13 @@
   "fontSize":         { "type": "slider",     "label": "Taille texte (px)",   "value": 14, "min": 10, "max": 30, "step": 1, "group": "🔤 Typographie" },
   "usernameFontSize": { "type": "slider",     "label": "Taille pseudo (px)",  "value": 12, "min": 8,  "max": 24, "step": 1, "group": "🔤 Typographie" },
 
+  "chatSide": {
+    "type": "dropdown",
+    "label": "Position du chat",
+    "value": "left",
+    "options": { "left": "Gauche", "right": "Droite" },
+    "group": "📐 Mise en page"
+  },
   "chatWidth":    { "type": "slider",   "label": "Largeur widget (px)",            "value": 400, "min": 260, "max": 800, "step": 10, "group": "📐 Mise en page" },
   "maxMessages":  { "type": "number",   "label": "Max messages affichés",          "value": 8,   "min": 3,   "max": 20,  "step": 1,  "group": "📐 Mise en page" },
   "msgSpacing":   { "type": "slider",   "label": "Espacement messages (px)",       "value": 7,   "min": 0,   "max": 30,  "step": 1,  "group": "📐 Mise en page" },
