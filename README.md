@@ -81,5 +81,4 @@ Dans le panel **FIELDS** de SE :
 
 ## 🔗 Liens
 
-- 📺 Stream : [twitch.tv/Paglorieux](https://twitch.tv/Paglorieux)
-- 🎮 Compte secondaire : [twitch.tv/DoktorP3st](https://twitch.tv/DoktorP3st)
+- 🎮 Twitch : [twitch.tv/DoktorP3st](https://twitch.tv/DoktorP3st)
